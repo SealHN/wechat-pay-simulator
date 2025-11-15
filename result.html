@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付结果</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="result-icon success">
+                <svg viewBox="0 0 24 24" width="48" height="48">
+                    <path fill="#09BB07" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+            </div>
+            
+            <h2 class="result-title">支付成功</h2>
+            
+            <div class="payment-details">
+                <p>支付金额：<span id="paymentAmount">￥1.00</span></p>
+                <p>收款方：<span id="merchantName">测试商户</span></p>
+                <p>支付时间：<span id="paymentTime"></span></p>
+                <p>支付密码：<span id="passwordUsed">******</span></p>
+            </div>
+            
+            <div class="action-area">
+                <button id="viewReport" class="report-button">查看测试报告</button>
+                <button id="backToHome" class="secondary-button">返回首页</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/result.js"></script>
+</body>
+</html>
